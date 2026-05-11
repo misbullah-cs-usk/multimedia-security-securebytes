@@ -190,3 +190,40 @@ Table Result
 | Blur-k99 | 0.1 | 2.50 | 11.25 | 8500.08 | 0.0083 |
 | Blur-k99 | 0.5 | 6.25 | 18.75 | 1961.31 | 0.0591 |
 | Blur-k99 | 1.0 | 7.50 | 25.00 | 1379.19 | 0.1246 |
+
+## References
+
+1. Oh, S. J., Benenson, R., Fritz, M., & Schiele, B. (2016). *Facial Image Obfuscation with Deep Learning*. Proceedings on Privacy Enhancing Technologies (PoPETs).  
+   https://petsymposium.org/popets/2016/popets-2016-0047.pdf
+
+2. Oh, S. J., Benenson, R., Fritz, M., & Schiele, B. (2016). *Facial Image Obfuscation with Deep Learning*. arXiv preprint.  
+   https://arxiv.org/pdf/1609.00408.pdf
+
+3. Dwork, C. (2006). *Differential Privacy*. International Colloquium on Automata, Languages and Programming (ICALP).
+
+4. AT&T Laboratories Cambridge. *The ORL Database of Faces*.  
+   https://cam-orl.co.uk/facedatabase.html
+
+5. OpenCV Documentation. *Smoothing Images*.  
+   https://docs.opencv.org/
+
+6. PyTorch Documentation.  
+   https://pytorch.org/docs/
+
+7. scikit-image Documentation. *Structural Similarity Index (SSIM)*.  
+   https://scikit-image.org/
+
+8. PyImageSearch. *Face Blurring and Anonymization with OpenCV*.  
+   https://pyimagesearch.com/
+
+9. GeeksforGeeks. *How to Blur Faces in Images using OpenCV in Python*.  
+   https://www.geeksforgeeks.org/how-to-blur-faces-in-images-using-opencv-in-python/
+
+10. Fan, L. et al. (2019). *Image Privacy Protection with Differential Privacy*.  
+    https://webpages.charlotte.edu/lfan4/pdf/TPDP2019.pdf
+
+11. Fan Research Group. *Image Privacy Project*.  
+    https://fan-group.github.io/imageprivacy/
+
+12. understand-ai. *Anonymizer GitHub Repository*.  
+    https://github.com/understand-ai/anonymizer
