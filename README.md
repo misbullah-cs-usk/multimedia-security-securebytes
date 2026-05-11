@@ -27,6 +27,6 @@ In this project, we investigate privacy-preserving face de-identification using 
 
 ### 1. Clone Repository
 ```
-git clone [https://github.com/misbullah-cs-usk/multimedia-security-securebytes](https://github.com/misbullah-cs-usk/multimedia-security-securebytes)
+git clone https://github.com/misbullah-cs-usk/multimedia-security-securebytes
 cd multimedia-security-securebytes
 ```
