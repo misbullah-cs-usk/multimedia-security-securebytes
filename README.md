@@ -65,7 +65,115 @@ This step:
 - Saves:
   - comparison figures
   - de-identified datasets
-### Run
+
+Run
 ```
 python3 step1_deidentification.py
+```
+
+Generated folders
+```
+dataset/
+├── original/
+├── pixelized_b2/
+├── pixelized_b4/
+├── pixelized_b8/
+├── pixelized_b16/
+├── blur_k5/
+├── blur_k15/
+├── blur_k45/
+└── blur_k99/
+```
+
+Generated figures
+```
+figures/
+├── step1_gaussian_blur_comparison.png
+└── step1_pixelization_comparison.png
+```
+
+## Step 2 — CNN Re-Identification Attack
+This step:
+- Loads the datasets generated in Step 1
+- Trains one CNN model for each image variant
+- Evaluates:
+  - Top-1 accuracy
+  - Top-5 accuracy
+- Saves:
+  - trained models
+  - training history
+  - summary figures
+
+Run
+```
+python3 step2_attack.py
+```
+
+Generated models:
+```
+models/
+├── original_cnn.pth
+├── pixelized_b16_cnn.pth
+├── blur_k99_cnn.pth
+└── ...
+```
+
+Generated figures:
+```
+figures/
+├── step2_summary_table.png
+├── step2_original_curves.png
+└── ...
+```
+
+Table Result
+
+| Dataset | Baseline | Original | 2×2 | 4×4 | 8×8 | 16×16 | k=15 | k=45 | k=99 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| AT&T Top-1 (%) | 2.50 | 92.50 | 96.25 | 85.00 | 87.50 | 80.00 | 91.25 | 76.25 | 62.50 |
+| AT&T Top-5 (%) | 12.50 | 97.50 | 97.50 | 95.00 | 96.25 | 95.00 | 98.75 | 95.00 | 82.50 |
+
+## Step 3 — Differential Privacy Defense
+This step:
+- Applies Differential Privacy noise using the Laplace mechanism
+- Creates DP-protected datasets
+- Re-runs CNN attack evaluation
+- Computes:
+  - Top-1 accuracy
+  - Top-5 accuracy
+  - MSE
+  - SSIM
+- Generates result plots and visual comparison images
+
+Run
+```
+python3 step3_dp_defense.py
+```
+
+Generated DP datasets:
+```
+dataset_dp/
+├── pixelized_b16_eps0.1/
+├── pixelized_b16_eps0.5/
+├── pixelized_b16_eps1.0/
+├── blur_k99_eps0.1/
+├── blur_k99_eps0.5/
+└── blur_k99_eps1.0/
+```
+
+Generated figures:
+```
+figures_step3/
+├── step3_mse_vs_epsilon.png
+├── step3_ssim_vs_epsilon.png
+├── step3_attack_accuracy_vs_epsilon.png
+├── step3_dp_examples.png
+└── step3_visual_comparison.png
+```
+
+Generated results:
+```
+results_step3/
+├── step3_dp_results.csv
+└── step3_dp_results.json
 ```
