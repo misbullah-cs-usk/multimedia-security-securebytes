@@ -30,3 +30,42 @@ In this project, we investigate privacy-preserving face de-identification using 
 git clone https://github.com/misbullah-cs-usk/multimedia-security-securebytes
 cd multimedia-security-securebytes
 ```
+
+### 2. Create Python Environment
+```
+python3 -m venv env
+source env/bin/activate
+```
+
+### 3. Install Dependencies
+```
+pip install -r requirements.txt
+```
+
+## Project Structure
+```
+./
+├── step1_deidentification.py
+├── step2_attack.py
+├── step3_dp_defense.py
+├── dataset/
+├── dataset_dp/
+├── models/
+├── figures/
+├── figures_step3/
+└── results_step3/
+```
+
+## Step 1 — Face De-Identification
+This step:
+- Downloads the AT&T ORL Face Dataset
+- Applies:
+  - Gaussian blur
+  - Pixelization
+- Saves:
+  - comparison figures
+  - de-identified datasets
+### Run
+```
+python3 step1_deidentification.py
+```
