@@ -1,0 +1,152 @@
+[
+  {
+    "variant": "original",
+    "epsilon": "NP",
+    "top1_accuracy": 92.5,
+    "top5_accuracy": 97.5,
+    "baseline_top1": 2.5,
+    "baseline_top5": 12.5,
+    "mse": 0.0,
+    "ssim": 1.0
+  },
+  {
+    "variant": "pixelized_b2",
+    "epsilon": "NP",
+    "top1_accuracy": 96.25,
+    "top5_accuracy": 98.75,
+    "baseline_top1": 2.5,
+    "baseline_top5": 12.5,
+    "mse": 91.66098022460938,
+    "ssim": 0.9052973268496095
+  },
+  {
+    "variant": "pixelized_b4",
+    "epsilon": "NP",
+    "top1_accuracy": 85.0,
+    "top5_accuracy": 95.0,
+    "baseline_top1": 2.5,
+    "baseline_top5": 12.5,
+    "mse": 318.49639892578125,
+    "ssim": 0.6961368823499626
+  },
+  {
+    "variant": "pixelized_b8",
+    "epsilon": "NP",
+    "top1_accuracy": 87.5,
+    "top5_accuracy": 93.75,
+    "baseline_top1": 2.5,
+    "baseline_top5": 12.5,
+    "mse": 775.9652099609375,
+    "ssim": 0.39930048057580947
+  },
+  {
+    "variant": "pixelized_b16",
+    "epsilon": "NP",
+    "top1_accuracy": 80.0,
+    "top5_accuracy": 95.0,
+    "baseline_top1": 2.5,
+    "baseline_top5": 12.5,
+    "mse": 1524.6400146484375,
+    "ssim": 0.22667108929818675
+  },
+  {
+    "variant": "blur_k5",
+    "epsilon": "NP",
+    "top1_accuracy": 93.75,
+    "top5_accuracy": 97.5,
+    "baseline_top1": 2.5,
+    "baseline_top5": 12.5,
+    "mse": 70.67999267578125,
+    "ssim": 0.9229983603077332
+  },
+  {
+    "variant": "blur_k15",
+    "epsilon": "NP",
+    "top1_accuracy": 91.25,
+    "top5_accuracy": 100.0,
+    "baseline_top1": 2.5,
+    "baseline_top5": 12.5,
+    "mse": 277.691162109375,
+    "ssim": 0.6776076739383297
+  },
+  {
+    "variant": "blur_k45",
+    "epsilon": "NP",
+    "top1_accuracy": 76.25,
+    "top5_accuracy": 95.0,
+    "baseline_top1": 2.5,
+    "baseline_top5": 12.5,
+    "mse": 769.693603515625,
+    "ssim": 0.355429170271352
+  },
+  {
+    "variant": "blur_k99",
+    "epsilon": "NP",
+    "top1_accuracy": 62.5,
+    "top5_accuracy": 80.0,
+    "baseline_top1": 2.5,
+    "baseline_top5": 12.5,
+    "mse": 1178.2440185546875,
+    "ssim": 0.24886136108420107
+  },
+  {
+    "variant": "pixelized_b16",
+    "epsilon": 0.1,
+    "top1_accuracy": 3.75,
+    "top5_accuracy": 15.0,
+    "baseline_top1": 2.5,
+    "baseline_top5": 12.5,
+    "mse": 8329.9345703125,
+    "ssim": 0.011541316243427104
+  },
+  {
+    "variant": "pixelized_b16",
+    "epsilon": 0.5,
+    "top1_accuracy": 15.0,
+    "top5_accuracy": 23.75,
+    "baseline_top1": 2.5,
+    "baseline_top5": 12.5,
+    "mse": 2275.52880859375,
+    "ssim": 0.06820317215233707
+  },
+  {
+    "variant": "pixelized_b16",
+    "epsilon": 1.0,
+    "top1_accuracy": 32.5,
+    "top5_accuracy": 66.25,
+    "baseline_top1": 2.5,
+    "baseline_top5": 12.5,
+    "mse": 1716.154052734375,
+    "ssim": 0.12827146243991586
+  },
+  {
+    "variant": "blur_k99",
+    "epsilon": 0.1,
+    "top1_accuracy": 2.5,
+    "top5_accuracy": 11.25,
+    "baseline_top1": 2.5,
+    "baseline_top5": 12.5,
+    "mse": 8500.08203125,
+    "ssim": 0.008256183092560487
+  },
+  {
+    "variant": "blur_k99",
+    "epsilon": 0.5,
+    "top1_accuracy": 6.25,
+    "top5_accuracy": 18.75,
+    "baseline_top1": 2.5,
+    "baseline_top5": 12.5,
+    "mse": 1961.3052978515625,
+    "ssim": 0.05908977331750564
+  },
+  {
+    "variant": "blur_k99",
+    "epsilon": 1.0,
+    "top1_accuracy": 7.5,
+    "top5_accuracy": 25.0,
+    "baseline_top1": 2.5,
+    "baseline_top5": 12.5,
+    "mse": 1379.1947021484375,
+    "ssim": 0.12456736437610871
+  }
+]
