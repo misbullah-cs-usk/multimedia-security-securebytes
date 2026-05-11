@@ -22,3 +22,9 @@ In this project, we investigate privacy-preserving face de-identification using 
     - Mean Squared Error (MSE)
     - Structural Similarity Index (SSIM)
   - To determine whether Differential Privacy can reduce CNN re-identification performance while maintaining acceptable image quality.
+
+## How to Run the Project
+
+### 1. Clone Repository
+git clone [<your-repository-url>](https://github.com/misbullah-cs-usk/multimedia-security-securebytes)
+cd multimedia-security-securebytes
